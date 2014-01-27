@@ -13,7 +13,7 @@ do
     echo
     echo $E
     curl https://stage.wepayapi.com/v2/$E \
-        -H "Authorization: Bearer $TOKEN"
+        -H "Authorization: Bearer $TOKEN" | python -mjson.tool
 
 done
 
@@ -30,5 +30,5 @@ do
     echo
     echo $E
     curl --data "account_id=$ACCOUNT" https://stage.wepayapi.com/v2/$E \
-        -H "Authorization: Bearer $TOKEN"
+        -H "Authorization: Bearer $TOKEN" | python -mjson.tool
 done
