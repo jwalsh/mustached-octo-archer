@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# https://www.wepay.com/developer/reference/checkout
 echo Validating the staging setup for WePay
 
 curl https://stage.wepayapi.com/v2/checkout/create \
