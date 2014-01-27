@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+    This should follow the implementation guidelines associated with the
+    documentation noted in
+
+    <ol>
+      <li>https://www.wepay.com/developer/tutorial/iframe
+      </li>
+      <li><tt onclick="javascript:console.log(WePay)">WePay</tt> namespace
+      </li>
+    </ol>
+
+
+    <form action="">
+      <h2>Credit Card Info</h2>
+      <label for="">Name:</label>
+      <input type="text" name="cc_name" placeholder="Name on Card"/>
+
+      <label for="">Number:</label>
+      <input type="text" name="cc_num" placeholder="Credit Card
+                                                    Number"/>
+
+      <label for="">Date:</label>
+
+      <input type="text" name="cc_m" placeholder="MM"/>
+      <input type="text" name="cc_y" placeholder="YYYY"/>
+
+      <label for="">CVV:</label>
+      <input type="text" name="cc_cvv" placeholder="CVV"/>
+    </form>
+    <h2>Billing Address</h2>
+
+    <button>Continue</button>
+
+
+    <script type="text/javascript" src="https://www.wepay.com/js/iframe.wepay.js">
+    </script>
+
+    <script type="text/javascript">
+      WePay.iframe_checkout("checkout_div_id", "checkout_uri");
+    </script>
+
+  </body>
+</html>
