@@ -1,0 +1,8 @@
+{
+  "name": "sama-119-wepay-prototype",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.10.2"
+  },
+  "devDependencies": {}
+}
